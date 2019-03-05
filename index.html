@@ -5,10 +5,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="static/css/index.css">
-    <title>Document</title>
+    <title>A Single Page Application</title>
 </head>
 <body>
-    
+    <header>
+        <nav>
+            <ol>
+                <li><a href="home" data-target="home" class="nav-link">Home</a></li>
+                <li><a href="list" data-target="list" class="nav-link">List</a></li>
+                <li><a href="detail" data-target="detail" class="nav-link">Detail</a></li>
+            </ol>
+        </nav>
+    </header>
+
+    <main>
+        <div class="page active" id="home">
+            <h1>Home</h1>
+        </div>
+        <div class="page" id="list">
+            <h1>List</h1>
+        </div>
+        <div class="page" id="detail">
+            <h1>Detail</h1>
+        </div>
+    </main>
 
     <script src="main.js"></script>
 </body>
